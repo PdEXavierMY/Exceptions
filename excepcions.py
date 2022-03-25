@@ -1,19 +1,8 @@
-from posixpath import split
 import re
-from introducir.cadena import solicitar_introducir_cadena, solicitar_introducir_palabra
+from introducir import solicitar_introducir_cadena
 
-def comprobar(texto):
-    if re.search("*.@.*\..*", texto) == None:
-        print("Introduzca un correo válido!!")
-        usuario()
-    else:
-        return True
+def cuenta_electronica():
+    correo = solicitar_introducir_cadena("Introduzca su correo")
+    print(comprobar(correo))
 
-def usuario():
-    correo = solicitar_introducir_palabra("Introduzca su correo")
-    if comprobar(correo) == True:
-        separado = split("@")
-        print(separado)
-
-x = re.search("*.@.*\..*", "javi@gmail.com")
-print(x)
+def comprobar(correo):
