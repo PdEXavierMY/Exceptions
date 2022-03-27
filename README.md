@@ -1,7 +1,8 @@
 # Exceptions
 <h1 align="center">Excepciones en POO</h1>
 ---
-En este [repositorio](https://github.com/Xavitheforce/Agregacion-Composicion_POO) quedan resueltos los ejercicios de excepciones en POO.
+En este [repositorio](https://github.com/Xavitheforce/Exceptions) quedan resueltos los ejercicios de excepciones en POO.
+---
 
 El código pide al usuario introducir una dirección de correo electrónica. Si el texto introducido no coincide con un formato equivalente al de un correo, vuelve a pedir al usuario que lo introduzca. Cuando el str introducido lleva el formato xxx@xxx.xxx comprueba si la terminación es .com o .es y saluda al usuario. En caso contrario termina el programa alegando ataque informático.
 
