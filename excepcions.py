@@ -7,7 +7,10 @@ def cuenta_electronica():
         print("Direccion no válida. Por favor introduzca un correo del formato xxx@xxx.xxx")
         cuenta_electronica()
     else:
-        print("correcto!")
+        usuario = []
+        nombre = correo.split("@")
+        usuario.append(nombre[0])
+        print(usuario)
 
 def comprobar(correo):
     escorreo = re.search(".*@.*\..*", correo)
@@ -15,3 +18,5 @@ def comprobar(correo):
         return False
     else:
         return True
+
+cuenta_electronica()
