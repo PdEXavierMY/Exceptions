@@ -15,7 +15,7 @@ def cuenta_electronica():
             usuario.append(nombre[0])
             print("¡Bienvenido "+str(usuario[0])+"!")
         elif comprobacion == 2:
-            print("Cuenta bloqueada a causa de un posible ataque.")
+            print("Extensión no reconocida, solo se admite .com o .es\nCuenta bloqueada a causa de un posible ataque.")
             exit()
 
 def comprobar(correo):
