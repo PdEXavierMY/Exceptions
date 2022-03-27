@@ -1,5 +1,4 @@
 import re
-from tkinter.messagebox import NO
 from introducir import solicitar_introducir_cadena
 
 def cuenta_electronica():
@@ -15,7 +14,7 @@ def cuenta_electronica():
             usuario.append(nombre[0])
             print("¡Bienvenido "+str(usuario[0])+"!")
         elif comprobacion == 2:
-            print("Extensión no reconocida, solo se admite .com o .es\nCuenta bloqueada a causa de un posible ataque.")
+            print("Extensión no reconocida, solo se admite '.com' o '.es'\nCuenta bloqueada a causa de un posible ataque.")
             exit()
 
 def comprobar(correo):
@@ -23,8 +22,8 @@ def comprobar(correo):
     if escorreo == None:
         return False
     else:
-        escorreo1 = re.search("\.com", correo)
-        escorreo2 = re.search("\.es", correo)
+        escorreo1 = re.search(".com$", correo)
+        escorreo2 = re.search(".es$", correo)
         if escorreo1 or escorreo2 != None:
             return 1
         else:
