@@ -10,7 +10,7 @@ def cuenta_electronica():
         usuario = []
         nombre = correo.split("@")
         usuario.append(nombre[0])
-        print(usuario)
+        print("¿Bienvenido "+str(usuario[0])+"!")
 
 def comprobar(correo):
     escorreo = re.search(".*@.*\..*", correo)
