@@ -18,7 +18,7 @@ def solicitar_introducir_cadena(invite):
             # Tenemos lo que queremos, salimos del bucle saliendo de la función
             return datoIntroducido
         else:
-            print("La cadena introducida debe tener al menos 1 elemento!!")
+            print("¡¡La cadena introducida debe tener al menos 1 elemento!!")
 
 
 def solicitar_introducir_char(invite):

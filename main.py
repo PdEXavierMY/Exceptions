@@ -1,2 +1,4 @@
+from excepcions import correo_electronico as E
+
 if __name__ == "__main__":
-    import excepcions
+    E.cuenta_electronica()

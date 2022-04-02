@@ -29,5 +29,3 @@ class correo_electronico:
                 return 1
             else:
                 return 2
-
-correo_electronico.cuenta_electronica()
